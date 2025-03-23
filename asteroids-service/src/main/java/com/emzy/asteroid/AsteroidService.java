@@ -41,9 +41,8 @@ public class AsteroidService {
                 "DEMO_KEY"
         );
 
-        List<Asteroid> list = response.nearEarthObjects().values().stream().flatMap(Collection::stream)
-//                .filter(Asteroid::isPotentiallyHazardous)
+        return response.nearEarthObjects().values().stream()
+                .flatMap(Collection::stream)
                 .toList();
-        return list;
     }
 }

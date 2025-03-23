@@ -2,8 +2,6 @@ package com.emzy.asteroid;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.util.List;
-
 public record Asteroid(
         String id,
         String name,
